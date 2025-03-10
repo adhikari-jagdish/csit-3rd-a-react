@@ -22,3 +22,10 @@
     font-weight: bold;
     color: white;
 }
+
+.clock-container {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: monospace;
+    padding: 10px;
+  }
