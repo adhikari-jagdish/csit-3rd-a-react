@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import Movies from './components/movies';
 import NavBar from './components/nav-bar';
+import PageNotFound from './components/page_not_found';
+import ContactUs from './components/contact-us/contact-us';
 
 //comment
 function App() {
@@ -11,8 +13,9 @@ function App() {
       <Route path="/" element={<NavBar />} >
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Route>
-     
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 }
