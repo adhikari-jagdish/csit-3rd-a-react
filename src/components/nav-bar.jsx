@@ -21,6 +21,9 @@ const NavBar = () => {
                     <Link to="/about-us">About Us</Link>
                     <Link to="/contact-us">Contact Us</Link>
                     <Link to="/counter">Counter</Link>
+                    <Link to="/component-1">Component1</Link>
+                    <Link to="/component-use-context">Component Use Content</Link>
+                    <Link to="/login">Login</Link>
                 </div>
                 <div className="clock-container">
                     {time.toLocaleTimeString()}

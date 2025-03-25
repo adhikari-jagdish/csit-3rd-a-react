@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Input from "./input-field";
-import { set } from "react-hook-form";
+import { Button } from '@mantine/core';
+import '@mantine/core/styles.css';
 
 const ContactUs = () => {
 
@@ -50,6 +51,8 @@ const ContactUs = () => {
                         onChange={handleChange}
                     />
 
+
+
                     <Input
                         label="Phone Number"
                         type="tel"
@@ -59,8 +62,9 @@ const ContactUs = () => {
                         onChange={handleChange}
                     />
 
-                    <button type="submit">Submit Form</button>
-                </div>
+                    <Button variant="outline" color="blue" size="sm">
+                        Click Me
+                    </Button>                </div>
             </form>
         </>
     );
